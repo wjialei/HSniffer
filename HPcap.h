@@ -9,7 +9,7 @@
 using namespace std;
 
 extern pcap_if_t* allAdapters; // list of adapters
-extern int size; // number of adapters
+extern int cntAdapters; // number of adapters
 extern char errbuf[1024]; // number of errors
 extern pcap_t* sniff; // sniff
 extern struct pcap_pkthdr* packHeader; // the header of packets
