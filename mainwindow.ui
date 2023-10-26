@@ -6,20 +6,148 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1048</width>
+    <height>661</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="adaptersLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>网卡</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startCapButton">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>94</y>
+      <width>93</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始捕获</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="finishCapButton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>94</y>
+      <width>93</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止捕获</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="adaptersComboBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>891</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rulesLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>规则</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ruleLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>621</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="packetTable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>1011</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>时间</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>源MAC地址</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>目的MAC地址</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>长度</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>协议类型</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>源IP地址</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>目的IP地址</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPlainTextEdit" name="packetDataText">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>1011</width>
+      <height>87</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1048</width>
      <height>26</height>
     </rect>
    </property>

@@ -9,12 +9,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    CapThread.cpp \
     HPcap.cpp \
+    PacketTableItem.cpp \
+    control.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    CapThread.h \
     HPcap.h \
+    PacketTableItem.h \
+    control.h \
     mainwindow.h
 
 FORMS += \
