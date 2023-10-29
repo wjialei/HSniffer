@@ -141,6 +141,16 @@
      </rect>
     </property>
    </widget>
+   <widget class="QPlainTextEdit" name="packetParseText">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>1011</width>
+      <height>87</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

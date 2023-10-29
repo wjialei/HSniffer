@@ -12,7 +12,6 @@ SOURCES += \
     CapThread.cpp \
     HPcap.cpp \
     PacketTableItem.cpp \
-    control.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -20,7 +19,6 @@ HEADERS += \
     CapThread.h \
     HPcap.h \
     PacketTableItem.h \
-    control.h \
     mainwindow.h
 
 FORMS += \

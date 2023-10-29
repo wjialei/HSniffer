@@ -5,6 +5,7 @@
 #include <HPcap.h>
 #include <CapThread.h>
 #include <PacketTableItem.h>
+#include <iomanip>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,6 +18,11 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    void showTCP(int);
+    void showUDP(int);
+    void showARP(int);
+    void showICMP(int);
 
 private slots:
     void on_startCapButton_clicked();
@@ -34,7 +40,7 @@ private:
     CapThread *ct;
 
 signals:
-    void sendAdapterIndex(int);
+    void sendAdapterIndex(int, string);
 
 };
 #endif // MAINWINDOW_H
